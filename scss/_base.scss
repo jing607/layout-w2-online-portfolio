@@ -1,0 +1,21 @@
+/* _base */
+
+body {
+    font-family: "Bruno Ace SC", sans-serif;
+    line-height: 1.5;
+}  
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}

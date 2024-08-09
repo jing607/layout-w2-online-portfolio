@@ -1,0 +1,127 @@
+/* _layout */
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.header {
+    color: $gray-100;
+    background-color: $dark-color;
+    
+    a {
+        color: $gray-100;
+        &:hover {
+            color: $light-color;
+        }
+    }
+}
+
+
+/* _components */
+
+.btn {
+    padding: 12px 24px;
+    gap: 4px;
+    border-radius: 32px;
+    &-light {
+        color: $dark-color;
+        background: $light-color;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
+    
+    &-dark {
+        color: $light-color;
+        background: $dark-color;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
+}
+
+/* _pages */
+
+.banner {
+    background: $dark-color;
+    color: $light-color;
+
+    &-content {
+        width: 636px;
+    }
+}
+
+.intro {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+    background-size: cover;
+    color: $light-color;
+
+    &-content {
+        width: 526px;
+    }
+}
+
+.about {
+    &-list {
+        width: 636px;
+        color: $gray-900;
+        li {
+            border: 1px solid $gray-200;
+            width: calc(50% - 12px);
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    &-content {
+        width: 526px;
+        p {
+            color: $gray-900;
+        }
+    }
+}
+
+.contact {
+    color: $light-color;
+    background: $linear-gradient;
+    
+    &-title {
+        img {
+            width: 100px;
+            object-fit: contain;
+        }
+    }
+
+    .social-link {
+        border-radius: 40px;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            box-shadow: $box-shadow;
+        }
+    }
+}
+
+.project {
+    &-title {
+        width: 746px;
+    }
+
+    &-content {
+        p {
+            color: $gray-900;
+        }
+    }
+}
+
+.footer {
+    background: $dark-color;
+    color: $light-color;
+    a {
+        color: $light-color;
+        &:hover {
+            color: $gray-100;
+        }
+    }
+}
